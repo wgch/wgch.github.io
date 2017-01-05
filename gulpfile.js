@@ -24,8 +24,6 @@ gulp.task('nunjucks', function() {
 // Sass stuff
 gulp.task('sass', function () {
 	gulp.src('./assets/sass/*.scss')
-		.pipe(sass({outputStyle: 'expanded'}))
-		.pipe(gulp.dest('./assets/css'))
 		.pipe(sass({outputStyle: 'compressed'}))
 		.pipe(rename({extname: '.min.css'}))
 		.pipe(gulp.dest('./assets/css'));
