@@ -88,6 +88,9 @@ $spacing-xl: $spacing-lg*2;
 .full-width{
     width: 100%;
 }
+.text-grey{
+    color: #ddd;
+}
 
 .padding {
     $property: padding;
@@ -324,10 +327,6 @@ body {
     }
     img {
         z-index: 1;
-    }
-    a, a:hover, a:visited {
-        border: none;
-        outline: 0;
     }
 }
 
