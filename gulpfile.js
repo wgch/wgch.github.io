@@ -38,7 +38,7 @@ gulp.task('serve', ['sass', 'nunjucks'], function() {
 	gulp.watch("./assets/sass/*", ['sass']);
 	gulp.watch("./templates/**/*", ['nunjucks']);
 
-	gulp.watch("./*", reload);
+	gulp.watch(["./assets/**/**", "./templates/**/**"], reload);
 });
 
 // Default task

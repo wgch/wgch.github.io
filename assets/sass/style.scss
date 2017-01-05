@@ -1,3 +1,17 @@
 body {
     font-family: 'Libre Baskerville', serif;
 }
+
+section.row{
+    padding: 30px 0;
+}
+
+.border{
+    &-top{
+        border-width: 1px;
+        border-style: solid;
+    }
+    &-grey{
+        border-color: #ccc;
+    }
+}
