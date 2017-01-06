@@ -89,7 +89,7 @@ $spacing-xl: $spacing-lg*2;
     width: 100%;
 }
 .text-grey{
-    color: #ddd;
+    color: #ccc;
 }
 
 .padding {
@@ -322,6 +322,7 @@ $spacing-xl: $spacing-lg*2;
 
 body {
     font-family: 'Libre Baskerville', serif;
+    background: #eee url("../images/body-bg-1.jpg") repeat;
     p {
         font-size: 1.5rem;
     }
