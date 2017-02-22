@@ -12,7 +12,7 @@ var gulp        = require('gulp'),
 // Nunjucks compiling
 gulp.task('nunjucks', function() {
     // Gets .html and .nunjucks files in pages
-    return gulp.src('templates/**/*.+(html|nunjucks)')
+    return gulp.src('templates/index.html')
     // Renders template with nunjucks
     .pipe(nunjucksRender({
         path: ['./templates']
@@ -35,10 +35,8 @@ gulp.task('serve', ['sass', 'nunjucks'], function() {
 		server: "./"
 	});
 
-	gulp.watch("./assets/sass/*", ['sass']);
-	gulp.watch("./templates/**/*", ['nunjucks']);
-
-	gulp.watch(["./assets/**/**", "./templates/**/**"], reload);
+	gulp.watch("./assets/sass/*", ['sass', reload]);
+	gulp.watch("./templates/**/*", ['nunjucks', reload]);
 });
 
 // Default task

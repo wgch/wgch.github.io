@@ -1,29 +1,29 @@
 /* Borders */
+
 .border {
     $property: border;
     #{$property}-width: 1px;
     #{$property}-style: solid;
     z-index: 1000;
-    &-top{
+    &-top {
         #{$property}-top-style: solid;
     }
-    &-bottom{
+    &-bottom {
         #{$property}-bottom-style: solid;
     }
-    &-left{
-        #{$property}-left-style:solid;
+    &-left {
+        #{$property}-left-style: solid;
     }
-    &-right{
+    &-right {
         #{$property}-right-style: solid;
     }
-
     &-light {
         #{$property}-color: lighten(#aaa, 5);
-        &er{
+        &er {
             #{$property}-color: lighten(#aaa, 10);
         }
     }
-    &-white{
+    &-white {
         #{$property}-color: #fff;
     }
     &-radius {
@@ -40,17 +40,19 @@
     &-5px {
         #{$property}-width: 5px;
     }
-    &-0, &-none {
+    &-0,
+    &-none {
         #{$property}: none;
         outline: none;
     }
 }
 
-@mixin height($divider){
+@mixin height($divider) {
     $max-height: 720px;
     height: $max-height/$divider !important;
 }
-.height{
+
+.height {
     &-xl {
         @include height(1);
     }
@@ -80,121 +82,116 @@ $spacing-sm: $spacing-md/2;
 $spacing-xs: $spacing-sm/2;
 $spacing-lg: $spacing-md*2;
 $spacing-xl: $spacing-lg*2;
-
-.no-pad{
+.no-pad {
     padding: 0;
     margin: 0;
 }
-.full-width{
+
+.full-width {
     width: 100%;
 }
-.text-grey{
+
+.text-grey {
     color: #ccc;
 }
 
 .padding {
     $property: padding;
-
-    &-0{
+    &-0 {
         #{$property}: 0 !important;
     }
-
-    &-xl{
+    &-xl {
         #{$property}: $spacing-xl;
     }
-    &-lg{
+    &-lg {
         #{$property}: $spacing-lg;
     }
-    &-md{
+    &-md {
         #{$property}: $spacing-md;
     }
-    &-sm{
+    &-sm {
         #{$property}: $spacing-sm;
     }
-    &-xs{
+    &-xs {
         #{$property}: $spacing-xs;
     }
-
-    &-left{
-        &-0{
+    &-left {
+        &-0 {
             #{$property}-left: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-left: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-left: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-left: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-left: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-left: $spacing-xs;
         }
     }
-
-    &-right{
-        &-0{
+    &-right {
+        &-0 {
             #{$property}-right: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-right: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-right: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-right: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-right: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-right: $spacing-xs;
         }
     }
-
-    &-top{
-        &-0{
+    &-top {
+        &-0 {
             #{$property}-top: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-top: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-top: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-top: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-top: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-top: $spacing-xs;
         }
     }
-
-    &-bottom{
-        &-0{
+    &-bottom {
+        &-0 {
             #{$property}-bottom: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-bottom: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-bottom: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-bottom: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-bottom: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-bottom: $spacing-xs;
         }
     }
@@ -202,120 +199,114 @@ $spacing-xl: $spacing-lg*2;
 
 .margin {
     $property: margin;
-
-    &-0{
+    &-0 {
         #{$property}: 0 !important;
     }
-
-    &-xs{
+    &-xs {
         #{$property}: $spacing-xs;
     }
-    &-sm{
+    &-sm {
         #{$property}: $spacing-sm;
     }
-    &-md{
+    &-md {
         #{$property}: $spacing-md;
     }
-    &-lg{
+    &-lg {
         #{$property}: $spacing-lg;
     }
-    &-xl{
+    &-xl {
         #{$property}: $spacing-xl;
     }
-
-    &-left{
-        &-0{
+    &-left {
+        &-0 {
             #{$property}-left: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-left: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-left: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-left: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-left: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-left: $spacing-xs;
         }
     }
-
-    &-right{
-        &-0{
+    &-right {
+        &-0 {
             #{$property}-right: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-right: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-right: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-right: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-right: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-right: $spacing-xs;
         }
     }
-
-    &-top{
-        &-0{
+    &-top {
+        &-0 {
             #{$property}-top: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-top: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-top: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-top: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-top: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-top: $spacing-xs;
         }
     }
-
-    &-bottom{
-        &-0{
+    &-bottom {
+        &-0 {
             #{$property}-bottom: 0 !important;
         }
-        &-xl{
+        &-xl {
             #{$property}-bottom: $spacing-xl;
         }
-        &-lg{
+        &-lg {
             #{$property}-bottom: $spacing-lg;
         }
-        &-md{
+        &-md {
             #{$property}-bottom: $spacing-md;
         }
-        &-sm{
+        &-sm {
             #{$property}-bottom: $spacing-sm;
         }
-        &-xs{
+        &-xs {
             #{$property}-bottom: $spacing-xs;
         }
     }
 }
 
 .position {
-    &-fixed{
+    &-fixed {
         position: fixed;
     }
-    &-absolute{
+    &-absolute {
         position: absolute;
     }
-    &-relative{
+    &-relative {
         position: relative;
     }
 }
@@ -324,17 +315,74 @@ body {
     font-family: 'Libre Baskerville', serif;
     background: #eee url("../images/body-bg-1.jpg") repeat;
     p {
-        font-size: 1.5rem;
+        font-size: 1.2em;
+        line-height: 1.5em;
     }
     img {
         z-index: 1;
     }
+    h1,
+    h2,
+    h3 {
+        line-height: 1.8em;
+    }
+    h4,
+    h5,
+    h6 {
+        line-height: 1.5em;
+    }
 }
 
-.btn{
+.btn {
+    background: #ddd;
+    color: inherit;
     border-bottom-width: 3px;
+    transition: all 0.3s ease;
+    &:hover {
+        background: #ccc;
+    }
+    &-accent,
+    &-accent:hover {
+        background: #eb5e00;
+        color: #fff;
+    }
 }
-.story{
-    padding-top: 60px !important;
-    padding-bottom: 60px !important;
+
+a,
+a:hover {
+    color: #eb5e00;
+    text-decoration: none;
+}
+
+ul li {
+    @extend .padding-bottom-md;
+}
+
+.story {}
+
+.logo {
+    margin-top: -10px;
+}
+
+a.social-link {
+    padding: 15px;
+    margin-right: 7.5px;
+    background: none;
+    color: #999;
+    background: #ccc;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    &.behance:hover {
+        background: linear-gradient(#0096ff, #005dff);
+        color: #fff;
+    }
+    &.twitter:hover {
+        background: #1da1f2;
+        color: #fff;
+    }
+    &.linkedin:hover {
+        background: #0084bf;
+        color: #fff;
+    }
 }
